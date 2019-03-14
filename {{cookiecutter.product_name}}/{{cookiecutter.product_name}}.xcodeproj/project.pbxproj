@@ -57,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				C37F4B9F223A12D700C86BBB /* Sources */,
-				C37F4BA4223A16E200C86BBB /* {{cookiecutter.product_name}} */,
 				C37F4B88223A10BB00C86BBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,13 +121,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C37F4BA4223A16E200C86BBB /* {{cookiecutter.product_name}} */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "{{cookiecutter.product_name}}";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

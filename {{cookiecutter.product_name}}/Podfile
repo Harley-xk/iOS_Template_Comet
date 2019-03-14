@@ -17,4 +17,9 @@ target '{{cookiecutter.product_name}}' do
   # AutoLayout
   pod 'SnapKit'
 
+    # 项目框架
+    pod 'Comet'
+    # 菊花
+    pod 'Chrysan'
+  
 end

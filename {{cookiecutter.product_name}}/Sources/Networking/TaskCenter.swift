@@ -54,9 +54,9 @@ public class TaskCenter: SessionManager {
         let server = task.targetServer ?? defaultServer
         
         var headers = task.additionalHeaders
-        if task.authenticationNeeded, let token = UserCenter.shared.token?.value {
-            headers["Authorization"] = "Bearer \(token)"
-        }
+//        if task.authenticationNeeded, let token = UserCenter.shared.token?.value {
+//            headers["Authorization"] = "Bearer \(token)"
+//        }
         let request = self.request(server.fullPath(with: task.api),
                                    method: task.method,
                                    parameters: task.parameters,
