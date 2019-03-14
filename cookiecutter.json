@@ -1,4 +1,5 @@
 {
     "product_name": "Hello",
-    "organization_name": "Someone Co.,Ltd."
+    "organization_name": "Someone Co.,Ltd.",
+    "bundle_identifier": "com.someone.app"
 }
