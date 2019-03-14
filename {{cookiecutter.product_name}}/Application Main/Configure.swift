@@ -8,4 +8,4 @@
 
 import Foundation
 
-let apihost = "https://www.xxx.com/api"
+let mainServer = Server(scheme: "https", host: "api.xxxx.com", port: 8888, service: "api")

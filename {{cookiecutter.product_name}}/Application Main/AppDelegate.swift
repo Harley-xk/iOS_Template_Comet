@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        TaskCenter.setupMainCenterWith(server: mainServer)
+        
+        let decoder = JSONDecoder()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        TaskCenter.main.defaultDecoder = decoder
+
         return true
     }
 
