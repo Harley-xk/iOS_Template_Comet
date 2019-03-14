@@ -6,6 +6,9 @@ target '{{cookiecutter.product_name}}' do
   use_frameworks!
 
   # Pods for {{cookiecutter.product_name}}
+  
+  # R.Swift
+  pod 'R.swift'
 
   # Networking
   pod 'Alamofire'

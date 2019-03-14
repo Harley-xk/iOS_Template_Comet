@@ -20,6 +20,7 @@
 		C37F4BB4223A44DE00C86BBB /* TaskCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BAD223A44DE00C86BBB /* TaskCenter.swift */; };
 		C37F4BB5223A44DE00C86BBB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BAE223A44DE00C86BBB /* Task.swift */; };
 		C37F4BB6223A44DE00C86BBB /* TaskPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BAF223A44DE00C86BBB /* TaskPrinter.swift */; };
+		C37F4BB8223A45D500C86BBB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BB7223A45D400C86BBB /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C37F4BAD223A44DE00C86BBB /* TaskCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCenter.swift; sourceTree = "<group>"; };
 		C37F4BAE223A44DE00C86BBB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C37F4BAF223A44DE00C86BBB /* TaskPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPrinter.swift; sourceTree = "<group>"; };
+		C37F4BB7223A45D400C86BBB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 		C37F4B7E223A10BB00C86BBB = {
 			isa = PBXGroup;
 			children = (
-				C37F4B9C223A120F00C86BBB /* Application Main */,
 				C37F4B9F223A12D700C86BBB /* Sources */,
 				C37F4BA4223A16E200C86BBB /* {{cookiecutter.product_name}} */,
 				C37F4B88223A10BB00C86BBB /* Products */,
@@ -75,6 +76,7 @@
 				C37F4B96223A10BC00C86BBB /* Info.plist */,
 				C37F4B9D223A128E00C86BBB /* Configure.swift */,
 				C37F4B8A223A10BB00C86BBB /* AppDelegate.swift */,
+				C37F4BB7223A45D400C86BBB /* R.generated.swift */,
 			);
 			path = "Application Main";
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 		C37F4B9F223A12D700C86BBB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C37F4B9C223A120F00C86BBB /* Application Main */,
 				C37F4BA0223A12E400C86BBB /* User Interface */,
 				C37F4BA2223A12FE00C86BBB /* Models */,
 				C37F4BA1223A12EE00C86BBB /* Networking */,
@@ -135,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C37F4B99223A10BC00C86BBB /* Build configuration list for PBXNativeTarget "{{cookiecutter.product_name}}" */;
 			buildPhases = (
+				C37F4BB9223A460800C86BBB /* R.Swift Generation */,
 				C37F4B83223A10BB00C86BBB /* Sources */,
 				C37F4B84223A10BB00C86BBB /* Frameworks */,
 				C37F4B85223A10BB00C86BBB /* Resources */,
@@ -194,6 +198,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C37F4BB9223A460800C86BBB /* R.Swift Generation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R.Swift Generation";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/Sources/Application Main/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Sources/Application Support/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C37F4B83223A10BB00C86BBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,6 +235,7 @@
 				C37F4BB1223A44DE00C86BBB /* Response.swift in Sources */,
 				C37F4BB2223A44DE00C86BBB /* ErrorCode.swift in Sources */,
 				C37F4BB5223A44DE00C86BBB /* Task.swift in Sources */,
+				C37F4BB8223A45D500C86BBB /* R.generated.swift in Sources */,
 				C37F4BB4223A44DE00C86BBB /* TaskCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Application Main/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Application Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Application Main/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Application Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
