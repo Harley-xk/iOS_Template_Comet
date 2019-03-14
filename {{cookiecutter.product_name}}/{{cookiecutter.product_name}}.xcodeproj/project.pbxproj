@@ -21,6 +21,7 @@
 		C37F4BB5223A44DE00C86BBB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BAE223A44DE00C86BBB /* Task.swift */; };
 		C37F4BB6223A44DE00C86BBB /* TaskPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BAF223A44DE00C86BBB /* TaskPrinter.swift */; };
 		C37F4BB8223A45D500C86BBB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BB7223A45D400C86BBB /* R.generated.swift */; };
+		C37F4BBB223A499500C86BBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F4BBA223A499500C86BBB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C37F4BAE223A44DE00C86BBB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C37F4BAF223A44DE00C86BBB /* TaskPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPrinter.swift; sourceTree = "<group>"; };
 		C37F4BB7223A45D400C86BBB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C37F4BBA223A499500C86BBB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		C37F4BA2223A12FE00C86BBB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C37F4BBA223A499500C86BBB /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,7 +212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Sources/Application Support/R.generated.swift\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Sources/Application Main/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -226,6 +229,7 @@
 				C37F4BB6223A44DE00C86BBB /* TaskPrinter.swift in Sources */,
 				C37F4BB1223A44DE00C86BBB /* Response.swift in Sources */,
 				C37F4BB2223A44DE00C86BBB /* ErrorCode.swift in Sources */,
+				C37F4BBB223A499500C86BBB /* User.swift in Sources */,
 				C37F4BB5223A44DE00C86BBB /* Task.swift in Sources */,
 				C37F4BB8223A45D500C86BBB /* R.generated.swift in Sources */,
 				C37F4BB4223A44DE00C86BBB /* TaskCenter.swift in Sources */,
