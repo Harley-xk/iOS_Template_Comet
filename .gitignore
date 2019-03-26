@@ -1,3 +1,7 @@
 *.xcuserstate
 xcshareddata
 xcuserdata
+Pods
+Podfile.lock
+*.xcworkspace
+R.generated.swift
